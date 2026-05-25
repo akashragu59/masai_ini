@@ -1,0 +1,15 @@
+Explanation for all documents submitted
+
+Document #1 - using commands to create a folder, find directory and created environment 1(setup1) and installed transformer library and listed everything contained in the env
+
+Document 2# - its contains environment2(setup2) - using commands to created setup2 and create second environment and installed dotenv library then listed its contains also
+
+Document 3# - link for my git hub work i done
+
+Document 4# - command used to add our work to git hub
+
+Folder(Git Hub Screenshot)- it includes all the steps output snap i received in Git hub
+
+Folder(vs code screenshot) - it includes all the steps output snap i done in VS Code
+
+ZIP Attachment - all the assignment document in single attachment in Git Hub

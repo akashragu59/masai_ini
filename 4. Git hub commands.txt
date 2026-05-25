@@ -1,0 +1,144 @@
+Git hub commands
+
+
+PS C:\Users\akash\OneDrive\Documents\New\stage1> .\env_Setup1\Scripts\Activate
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git init
+Initialized empty Git repository in C:/Users/akash/OneDrive/Documents/New/stage1/.git/
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git add .
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'akash@AKASH.(none)')
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git config --global user.name "Akash"
+>> git config --global user.email "akashragu59@gmail.comm"
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git commit -m "first commit"
+[master (root-commit) e959ede] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 gitstep1.py
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git branch -M main
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git remote add origin https://github.com/akashragu59/masai_ini.git
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 211 bytes | 105.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/akashragu59/masai_ini.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git add .
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git commit -m "first commit"
+[main fab7b7b] first commit
+ 1 file changed, 2 insertions(+)
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git branch -M main
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git remote add origin https://github.com/akashragu59/masai_ini.git
+error: remote origin already exists.
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 260 bytes | 260.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/akashragu59/masai_ini.git
+   e959ede..fab7b7b  main -> main
+branch 'main' set up to track 'origin/main'.
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> 
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gitstep1.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> ni gitsetup3.py
+
+
+    Directory: C:\Users\akash\OneDrive\Documents\New\stage1
+
+
+Mode                 LastWriteTime         Length Name                                              
+----                 -------------         ------ ----                                              
+-a----         5/25/2026  11:41 AM              0 gitsetup3.py                                      
+
+
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gitstep1.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitsetup3.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git add .\gitsetup3.py
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git commit -m "gitsetup3.py"
+[main ba03724] gitsetup3.py
+ 1 file changed, 2 insertions(+)
+ create mode 100644 gitsetup3.py
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/akashragu59/masai_ini.git
+   fab7b7b..ba03724  main -> main
+branch 'main' set up to track 'origin/main'.
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git branch
+* main
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git checkout -b changed
+Switched to a new branch 'changed'
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git branch
+* changed
+  main
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git add .\gitsetup3.py
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git commit -m "gitsetup3.py"
+[changed 2eb7da2] gitsetup3.py
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> git push -u origin changed
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'changed' on GitHub by visiting:
+remote:      https://github.com/akashragu59/masai_ini/pull/new/changed
+remote: 
+To https://github.com/akashragu59/masai_ini.git
+ * [new branch]      changed -> changed
+branch 'changed' set up to track 'origin/changed'.
+(env_Setup1) PS C:\Users\akash\OneDrive\Documents\New\stage1> 
